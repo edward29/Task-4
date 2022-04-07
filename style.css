@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 90.5vh;
+    background: #efeded;
+}
+
+.container .title{
+    background: #e54040;
+    width: 100%;
+    text-align: center;
+}
+
+.container .title h1{
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.content {
+    width: 95%;
+    margin: 20px auto;
+}
+
+.content p{
+    font-size: 22px;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+input{
+    display: block;
+    color: #e54040;
+    width: 250px;
+    font-size: 22px;
+    margin: 20px auto;
+    padding-left: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #e54040;
+    background: none;
+}
+
+button{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    padding: 8px 0;
+    margin: 5px auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #e54040;
+    border: #e54040 solid 2px;
+    border-radius: 20px;
+    width: 250px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+button:hover{
+    background: none;
+    color: #e54040;
+    transform: scale(1.05);
+}
+
+.outputDiv{
+    text-align: center;
+    padding: 10px 0 20px;
+    margin: 20px;
+}
+
+.outputText{
+    padding-bottom: 10px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.outputDiv #result p{
+    padding: 5px;
+}
+
+.outputDiv #result .name{
+    font-weight: 600;
+}
+
+span{
+    font-weight: bold;
+    color: #e54040;
+}
+
+.container span a{
+    font-weight: bold;
+    color: #e54040;
+}
+
+.container span a:hover{
+    text-decoration: underline;
+}
+
+.even,
+.odd {
+    position: relative;
+    display: inline-block;
+}
+  
+.even .evenText,
+.odd .oddText {
+    visibility: hidden;
+    width: 300px;
+    background-color: #918282;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    margin-left: -60px;
+}
+  
+.even:hover .evenText,
+.odd:hover .oddText {
+    visibility: visible;
+}
+
+footer{
+    font-size: 12px;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background: #111;
+    padding: 20px 23px;
+    text-align: center;
+}
+
+footer span{
+    color: #fff;
+}
+
+footer span a{
+    color: #e54040;
+}
+
+footer span a:hover{
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 770px) {
+    .content p{
+        font-size: 16px;
+    }
+
+    .outputDiv {
+        padding: 0;
+    }
+
+    .outputText{
+        font-size: 18px;
+        padding-bottom: 5px;
+        margin-top: -15px;
+    }
+    
+}
