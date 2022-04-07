@@ -184,5 +184,10 @@ footer span a:hover{
         padding-bottom: 5px;
         margin-top: -15px;
     }
+
+    footer{
+        padding: 10px 15px;
+        height: 40px;
+    }
     
 }
