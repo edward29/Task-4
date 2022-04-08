@@ -59,6 +59,13 @@ window.onload = function () {
         }
     });
 
+    historyBg.addEventListener('click', () => {
+        if (historyBg.classList.contains("show")) {
+            historyBg.classList.add("hide");
+            historyBg.classList.remove("show");
+        }
+    });
+
 
     // clear history or clear local storage
     const clearHistory = document.querySelector(".clearHistory");
@@ -71,5 +78,5 @@ window.onload = function () {
             return false;
         }
     });
-
+    
 }
