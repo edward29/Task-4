@@ -34,7 +34,7 @@ window.onload = function () {
 
     // dinagdagan ko nalang po nito para sa makita yung kunwaring database hehehe 
 
-    // showing history container
+    // showing history container script
     const btnHistory = document.querySelector(".btnHistory");
     const historyBg = document.querySelector(".historyBg");
 
@@ -50,7 +50,7 @@ window.onload = function () {
         }
     })
 
-    // Closing history container
+    // Closing history container script
     const historyClose = document.querySelector(".historyClose");
     historyClose.addEventListener('click', () => {
         if (historyBg.classList.contains("show")) {
@@ -67,7 +67,7 @@ window.onload = function () {
     });
 
 
-    // clear history or clear local storage
+    // clear history or clear local storage script
     const clearHistory = document.querySelector(".clearHistory");
     clearHistory.addEventListener('click', () => {
         const al = "Are you sure\nYou want to clear history?";
