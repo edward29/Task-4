@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Task 4</title>
 </head>
 <body>
@@ -14,6 +15,7 @@
         <div class="title">
             <h1>Javascript Task 4</h1>
         </div>
+        <form action="#">
         <div class="content">
             <p class="par1">
                 This simple website will determine whether the input from the user is
@@ -29,8 +31,9 @@
                 
             </p>
             <p class="par2">Please make sure your input is a number in the input below.</p>
-            <input type="number" id="inputNum" placeholder="Enter a number">
-            <button id="checkInput">Submit</button>
+            <input type="number" id="inputNum" placeholder="Enter a number" autofocus>
+            <button id="checkInput">Submit <i class="fa-regular fa-paper-plane"></i></button>
+            <div class="btnHistory">Show History <i class="fa-solid fa-clock-rotate-left"></i></div>
             <br><br>
             <hr>
             <br>
@@ -41,6 +44,28 @@
                 <div id="result"></div>
             </div>
             <p class="tips">Click the ODD or EVEN to see the Definition</p>
+        </div>
+    </form>
+    </div>
+
+    
+    <div class="historyBg hide">
+        <div class="historyCon">
+            <div class="TC">
+                <span class="historyTitle">History <i class="fa-solid fa-clock-rotate-left"></i></span>
+                <div class="CC">
+                    <span class="clearHistory"><i class="fa-solid fa-ban"></i></span>
+                <span class="historyClose"><i class="fa-solid fa-xmark"></i></span>
+                </div>
+            </div>
+            <div class="historyData">
+                <div class="dataTitle">Odd</div>
+                <div class="oddVal"></div>
+                <hr>
+                <div class="dataTitle">Even</div>
+                <div class="evenVal"></div>
+            </div>
+            
         </div>
     </div>
 

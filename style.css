@@ -126,7 +126,7 @@ span{
 .even .evenText,
 .odd .oddText {
     visibility: hidden;
-    width: 300px;
+    width: 120px;
     background-color: #918282;
     color: #fff;
     text-align: center;
@@ -135,7 +135,8 @@ span{
     position: absolute;
     z-index: 1;
     top: 100%;
-    margin-left: -60px;
+    right: 50%;
+    margin-left: 0;
 }
   
 .even:hover .evenText,
@@ -166,6 +167,137 @@ footer span a:hover{
     text-decoration: underline;
 }
 
+
+
+
+
+/* History design */
+.btnHistory{
+    display: block;
+    font-weight: 700;
+    margin: 0 auto;
+    width: 250px;
+    padding: 3px;
+    text-align: center;
+    color: #e54040;
+    border: solid 2px #e54040;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.btnHistory:hover{
+    background: #e54040;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.historyBg{
+    position: absolute;
+    height: auto;
+    width: 100%;
+    background: rgba(241, 246, 241, 0.373);
+    z-index: 99;
+}
+
+.historyCon{
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 60px auto;
+    border-radius: 5px;
+    background: #e98080a4;
+    padding: 20px;
+}
+
+.TC{
+    display: flex;
+    justify-content: space-between;
+    margin: -10px 10px 20px;    
+    font-size: 22px;
+}
+
+.CC{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.historyTitle{
+    color: #fff;
+    text-shadow: 1px 2px 2px #111;
+    letter-spacing: 2px;
+}
+
+.historyClose{
+    color: #111;
+    font-weight: 800;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: -8px;
+    transition: all .4s ease;
+}
+
+.historyData{
+    width: 90%;
+    margin: 10px auto;
+    word-wrap: break-word;
+    text-align: justify;
+    padding: 10px;
+}
+
+.dataTitle{
+    font-weight: 700;
+    padding: 5px;
+    color: #fff;
+    text-shadow: 1px 2px 2px #111;
+}
+
+
+.oddVal{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    text-shadow: 1px 2px 2px #fff;
+}
+
+.evenVal{
+    font-size: 22px;
+    font-weight: 600;
+    padding-left: 10px;
+    text-shadow: 1px 2px 2px #fff;
+}
+
+.clearHistory{
+    padding-top: 2px;
+    color: #eb0e0e;
+    text-align: center;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.clearHistory:hover,
+.historyClose:hover{
+    color: #fff;
+    background: none;
+    transform: scale(1.05);
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+hr{
+    height: 3px;
+    background: #111;
+}
+
+
 @media only screen and (max-width: 770px) {
     .content p{
         font-size: 16px;
@@ -190,4 +322,7 @@ footer span a:hover{
         height: 40px;
     }
     
+    .CC{
+        width: 30%;
+    }
 }
